@@ -84,3 +84,122 @@ background-image: linear-gradient(to right,
     color: rgb(75, 75, 161);
     border: .1rem solid rgb(52, 52, 124);
     }
+
+ .modal input[type=submit]:hover {
+        box-shadow: 0 -.3 .5rem rgba(213, 224, 106, 0.8)
+
+    }
+
+ .block {
+     display:flex;
+     justify-content: center;
+     float: left;
+     width: 50px;
+     height: 50px;
+     line-height: 50px;
+     border: .1rem solid rgba(213, 224, 106, 0.8);
+     font-size : 2.5rem;
+     text-align: center;
+     color: rgb(25,45,26)
+
+ }                    
+
+    .control {
+     position: absolute;
+     bottom: 3rem;
+     left: 45%;
+ }
+    .btn_restart,
+    .btn_quit {
+     padding: .6rem 1.6rem;
+     font-size: 1.3rem;
+     margin: 0  .3rem;
+     box-shadow: 0 .1rem  .2rem  rgb(19, 41, 24);
+     color:#070a06;
+     border-radius: 1.2rem;
+     cursor:pointer;
+
+ }
+
+ .btn_restart {
+     background-image: linear-grandint(to right,
+     #115588 15%,
+     #458745 45%,
+     #856385 98%)
+ }
+
+ .btn_restart:hover {
+     color:rgba(41, 46, 90, 0.8);
+     box-shadow: 0 -.3rem .5rem rgb(52, 52, 124);
+
+ }
+ .btn_quit {
+    background-image : linear-gradient (to right,
+     #115588 15%,
+     #458745 45%,
+     #856385 98%)
+    }
+    
+    .btn_quit:hover {
+    color: rgb(1, 1, 90);
+    box-shadow: 0 -.3rem .5rem rgba(52, 52, 124);
+    }
+    .winneer {
+        position: absolute;
+        top: -120%;
+        left: 0; 
+        right: 0;
+        background-color: #070a06;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .winner h2{
+        font-size: 2rem;
+        background: repeating-linear-gradient(#115566
+         18%,
+         #050607 78%,
+         #22381a);
+         padding:1.8rem 2.3rem;
+         margin: 3rem;
+         border-radius: 1.5rem;
+         color: rgb(52, 52, 124)
+    }
+
+    .winner.active {
+        top: 0;
+        height: 110vh;
+    }
+
+    .fa-solid {
+        color: rgb(25,45,26);
+    }
+
+    @media (max-width: 1000px) {
+        .control {
+            left: 10%;
+        }
+    }
+
+    @media (max-width: 550px) {
+        .area .title {
+            font-size: 2, 4rem;
+        }
+        label {
+            margin-top: 5rem;
+
+        }
+        .control {
+            bottom: 1rem;
+        }
+    }
+    @media (max-width: 360px) {
+        .area .title {
+            font-size: 2rem;
+        }
+        .area .btnStart {
+            font-size: 1rem;
+            padding: 1rem 1.8rem;
+    }
+}

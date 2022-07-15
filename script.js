@@ -17,8 +17,8 @@ const winnerText = document.querySelector('.winner h2')
 
 startBtn.addEventListener('click', openModal);
 newGameBtn.addEventListener('click', createBlock);
-restartBtn.addEventListener('click', restartGame);
-quitGame.addEventListener('click', gameQuit);
+// restartBtn.addEventListener('click', restartGame);
+// quitGame.addEventListener('click', gameQuit);
 controlBtn.style.display = 'none';
 
 
@@ -55,7 +55,7 @@ function createBlock(e) {
     input.value = '';
     title.innerHTML = `Player X's Start`;
     title.style.fontSize = '1.2rem';
-    controlBtn.style.display = 'initial'; 
+    controlBtn.style.display = 'initial';
 }
 
 
@@ -76,7 +76,6 @@ gameArea.onclick = function (e) {
     }
     checkWinner();
 }
-
 
 
 function checkWinner() {
@@ -115,19 +114,36 @@ function checkWinner() {
                 countX++;
                 if (result.length == countX) {
                     winnerWindow.classList.add('active');
-                    winnerText.innerHTML = ` <i class="fa-solid fa-trophy"></i>  Winner is  X `;
+                    winnerText.innerHTML = `<i class="fa-solid fa-trophy"></i> Winner is X `;
                 }
             } else if (result[i][j].innerHTML == '0') {
                 countY++;
                 if (result.length == countY) {
                     winnerWindow.classList.add('active');
-                    winnerText.innerHTML = ` <i class="fa-solid fa-trophy"></i>  Winner is  0 `;
+                    winnerText.innerHTML = ` <i class="fa-solid fa-trophy"></i> Winner is 0 `;
                 }
             }
         }
-
-
     }
+
+    var countX = 0, countY = 0;
+    for (let i = 0; i < result.length; i++) {
+
+        if (result[i][i].innerHTML == 'X') {
+            countX++;
+            if (result.length == countX) {
+                winnerWindow.classList.add('active');
+                winnerText.innerHTML = ` <i class="fa-solid fa-trophy"></i> Winner is X `;
+            }
+        } else if (result[i][i].innerHTML == '0') {
+            countY++;
+            if (result.length == countY) {
+                winnerWindow.classList.add('active');
+                winnerText.innerHTML = ` <i class="fa-solid fa-trophy"></i> Winner is 0 `;
+            }
+        }
+    }
+
     var countX = 0, countY = 0;
     for (var j = 0; j < result.length; j++) {
         if (result[j][result.length - 1 - j].innerHTML == 'X') {
@@ -149,9 +165,9 @@ function checkWinner() {
 
 function restartGame() {
     location.reload()
-    }
-    
-    function gameQuit() {
+}
+
+function gameQuit() {
     window.close()
     location.reload()
-    }
+}

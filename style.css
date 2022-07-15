@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap');
+/* font-family: 'Edu SA Beginner', cursive; */
+
 * {
     padding: 0;
     margin: 0;
@@ -10,7 +13,8 @@ body {
     display: flex;
     justify-content: center;
     height: 100vh;
-    background: rgb(171, 166, 202);
+    background: #aba6caad;
+    /* font-family: 'Edu SA Beginner', cursive; */
 }
 
 .area {
@@ -22,6 +26,7 @@ body {
     font-size: 3rem;
     color: rgb(124, 124, 236);
     text-align: center;
+    font-family: Arial, sans-serif;
     padding: .6rem 1.4rem;
     border-radius: .8rem;
 }
@@ -30,11 +35,14 @@ body {
     margin: 10rem auto;
     padding: 1.2rem 2rem;
     font-size: 1.2rem;
-    box-shadow: 0 .1rem .2rem rgb(0, 0, 0, .7);
-    color: rgb(1, 1, 90);
+    box-shadow: 0 .1rem .2rem rgba(139, 86, 86, 0.7);
+    color: rgb(85 57 145);
     border-radius: 1.2rem;
     cursor: pointer;
-    background-image: linear-gradient(to right, #aace97 0%, #7cafc7 51%, #a7f0dd 100%)
+
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    background-image: linear-gradient(to right, #c28ce2 0%, #918de7 51%, #4969d5c9 100%);
+
 }
 
 .area .btnStart:hover {
@@ -46,7 +54,7 @@ body {
     top: -120%;
     left: 0;
     right: 0;
-    background-color: rgba(213, 224, 106, 0.8);
+    background-color: rgb(53 5 61 / 35%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +82,7 @@ label {
     margin-bottom: 1.4rem;
     border-radius: .8rem;
     color: rgb(75, 75, 161);
-    border: .1rem solid rgb(52, 52, 124);
+    border: .1rem solid rgb(136 125 253)
 }
 
 .modal input[type=submit]:hover {
@@ -88,7 +96,7 @@ label {
     width: 50px;
     height: 50px;
     line-height: 50px;
-    border: .1rem solid rgba(213, 224, 106, 0.8);
+    border: .1rem solid #000000;
     font-size: 2.5rem;
     text-align: center;
     color: rgb(25, 45, 26)
@@ -112,7 +120,7 @@ label {
 }
 
 .btn_restart {
-    background-image: linear-grandint(to right, #115588 15%, #458745 45%, #856385 98%)
+    background-image: linear-grandint(to right, #769ebd 15%, #458745 45%, #856385 95%)
 }
 
 .btn_restart:hover {
@@ -125,8 +133,8 @@ label {
 }
 
 .btn_quit:hover {
-    color: rgb(121, 121, 199);
-    box-shadow: 0 -.3rem .5rem rgb(159, 159, 202);
+    color: rgb(105, 105, 216);
+    box-shadow: 0 -.3rem .5rem rgb(44, 44, 51);
 }
 
 .winner {
@@ -134,7 +142,7 @@ label {
     top: -120%;
     left: 0;
     right: 0;
-    background-color: #70a2c9 ;
+    background-color: #a2bacc ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,7 +151,7 @@ label {
 
 .winner h2 {
     font-size: 2rem;
-    background: repeating-linear-gradient(#115566 18%, #050607 78%, #22381a);
+    background: repeating-linear-gradient(#83aeb9 18%, #6a9ed1 78%, #a6cfda 19%);
     padding: 1.8rem 2.3rem;
     margin: 3rem;
     border-radius: 1.5rem;
@@ -158,6 +166,8 @@ label {
 .fa-solid {
     color: rgb(126, 180, 129);
 }
+
+
 
 @media (max-width: 1000px) {
     .control {
@@ -189,4 +199,11 @@ label {
 
 .control {
     bottom: 1rem;
+}
+
+
+
+
+.title{
+    font-family: 'Edu SA Beginner', cursive !important; 
 }
